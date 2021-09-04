@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tugas Praktikum</title>
+    </head>
+
+    <script lang="JavaScript">
+        //var nilai_a = document.nilaib
+        //var nilai_b = document.nilaia
+    
+            function tampil(hasil_param){
+                document.hasil = hasil_param
+            }
+    
+            function jumlahkan(){
+                var nilai_a = document.nilaib
+                var nilai_b = document.nilaia
+                var res = nilai_a + nilai_a
+                console.log(res)
+                tampil(res)
+            }
+    
+            function kurangkan(){
+                var res = nilai_a - nilai_b
+                console.log(res)
+                tampil(res)
+            }
+    
+            function kalikan(){
+                var res = nilai_a * nilai_b
+                console.log(res)
+                tampil(res)
+            }
+    
+            function bagikan(){
+                var res = nilai_a / nilai_b
+                console.log(res)
+                tampil(res)
+            }
+    </script>
+
+    <body>
+        <fieldset style="display: inline-block;">
+            <legend>Operasi</legend>
+                <p>Nilai 1 <input type="text" name="nilaia" size="11"><br></p>
+
+                <p>Nilai 2 <input type="text" name="nilaib" size="11"><br></p>
+                
+                <p>Hasil : <input type="text" name="hasil" size="11"></p>
+
+                <input type="button" value="+" name="penjumlahan" onclick="jumlahkan()">
+                
+                <input type="button" value="-" name="pengurangan" onclick="kurangkan()">
+                
+                <input type="button" value="x" name="perkalian" onclick="kalikan()">
+                
+                <input type="button" value="/" name="pembagian" onclick="bagikan()">
+        </fieldset> 
+    </body>
+
+</html>
